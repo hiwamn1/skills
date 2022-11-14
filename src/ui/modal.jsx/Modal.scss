@@ -1,0 +1,22 @@
+.modal__main {
+  width: 50vh;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 10px;
+  z-index: 200;
+  padding: 0.5rem;
+  animation: modalAnimate 200ms 0ms 1;
+}
+@keyframes modalAnimate {
+  from {
+    transform: translateX(-50%) translateY(-100rem);
+  }
+  to {
+    // transform: translateX(0) translateY(0);
+  transform: translateX(-50%) translateY(-50%);
+
+  }
+}

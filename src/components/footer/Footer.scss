@@ -1,0 +1,13 @@
+@import '../../sass/variables';
+
+.footer {
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: map-get($color-blue,primary);
+  // border-top: 2px solid map-get($color-gray,pale);
+  color: white;
+  margin: 5rem 0;
+}

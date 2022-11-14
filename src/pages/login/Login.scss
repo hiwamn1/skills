@@ -1,0 +1,266 @@
+@import "../../sass/variables";
+
+.container__login {
+  font-family: montaga;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.pic_skills {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .pic {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+    margin: 0.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .symbole{
+      font-size: 2.5rem;
+    }
+  }
+
+  .over {
+    width: 100%;
+    height: 100%;
+    &:hover {
+      transform: scale(1.3);
+      transition: all 6s;
+    }
+  }
+  .archicture {
+    background: url("../../assets/image/archicture.jpg") center/cover no-repeat
+      local;
+  }
+  .cake {
+    background: url("../../assets/image/cake.jpg") center/cover no-repeat local;
+  }
+  .cooker {
+    background: url("../../assets/image/cooker.jpg") center/cover no-repeat
+      local;
+  }
+  .developer {
+    background: url("../../assets/image/developer.jpg") center/cover no-repeat
+      local;
+  }
+  .electrician {
+    background: url("../../assets/image/electrician.jpg") center/cover no-repeat
+      local;
+  }
+  .giutar {
+    background: url("../../assets/image/giutar.jpg") center/cover no-repeat
+      local;
+  }
+  .hair {
+    background: url("../../assets/image/hair.jpg") center/cover no-repeat local;
+  }
+  .math {
+    background: url("../../assets/image/math.jpg") center/cover no-repeat local;
+  }
+  .mechanic {
+    background: url("../../assets/image/mechanic.jpg") center/cover no-repeat
+      local;
+  }
+  .painter {
+    background: url("../../assets/image/painter.jpg") center/cover no-repeat
+      local;
+  }
+  .phone {
+    background: url("../../assets/image/phone.jpg") center/cover no-repeat local;
+  }
+  .pipe {
+    background: url("../../assets/image/pipe.jpg") center/cover no-repeat local;
+  }
+  .psychologist {
+    background: url("../../assets/image/psychologist.jpg") center/cover
+      no-repeat local;
+  }
+  .robot {
+    background: url("../../assets/image/robot.jpg") center/cover no-repeat local;
+  }
+  .translate {
+    background: url("../../assets/image/translate.jpg") center/cover no-repeat
+      local;
+  }
+
+  .signer {
+    background: url("../../assets/image/signer.jpg") center/cover no-repeat
+      local;
+  }
+}
+
+.login {
+  opacity: 1;
+  background-color: #ffffff;
+  width: 40%;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  
+
+  .login__body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .login__title {
+      color: map-get($color-gray, full);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-family: alkalami;
+    }
+  }
+  .rules {
+    margin-top: 2rem;
+    padding: 0 1.9rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    direction: rtl;
+    font-size: medium;
+    color: map-get($color-gray, full);
+    label {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.btn__form {
+  width: 80%;
+  height: 100%;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem;
+  background-color: map-get($color-blue, full);
+  color: #ffffff;
+  font: inherit;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: map-get($color-blue, light);
+    cursor: pointer;
+  }
+}
+.error__yup{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: justify;
+  .error__yup__item{
+    color: red;
+    // font-weight: bold;
+
+  }
+}
+
+@media (max-width: 85rem) {
+  .pic_skills .pic{
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+@media (max-width: 70rem) {
+  .symbole{
+    font-size: 4rem;
+  }
+  .pic_skills .pic{
+    width: 14.01rem;
+    height: 14.01rem;
+  }
+  
+  
+  .login {
+    width: 50%;
+ 
+  }
+}
+@media (max-width: 57.4rem) {
+  .symbole{
+    font-size: 3rem;
+  }
+  .pic_skills .pic{
+    width: 11.2rem;
+    height: 11.2rem;
+  }
+  
+  .login {
+    width: 60%;
+   
+  }
+}
+
+@media (max-width: 47rem) {
+  .symbole{
+    font-size: 2rem;
+  }
+  .pic_skills .pic{
+    width: 9rem;
+    height: 9rem;
+  }
+  
+  .login {
+    width: 90%;
+   
+  }
+
+  .rules label {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 37.7rem) {
+  .symbole{
+    font-size: 1.5rem;
+  }
+  .pic_skills .pic{
+    width: 7rem;
+    height: 7rem;
+  }
+  
+}
+@media (max-width: 30rem) {
+  .symbole{
+    font-size: 1rem;
+  }
+  .pic_skills .pic{
+    width: 6rem;
+    height: 6rem;
+  }
+  
+}
+@media (max-width: 26rem) {
+  .symbole{
+    font-size: 1rem;
+  }
+  .pic_skills .pic{
+    width: 9rem;
+    height: 9rem;
+  }
+  
+}

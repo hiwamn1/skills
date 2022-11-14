@@ -1,0 +1,29 @@
+@import '../../sass/variables';
+div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div input:not([type="checkbox"]){
+  width: 90%;
+  margin: 0.7rem;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border: none;
+  // border-radius: 5px;
+  font: inherit;
+  text-align: left;
+  color: rgba(0,0,0,0.9);
+
+  background-color: transparent;
+
+  &::placeholder {
+    color: rgba(0,0,0,0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid map-get($color-blue, full );
+  }
+}

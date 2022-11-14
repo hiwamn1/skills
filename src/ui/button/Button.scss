@@ -1,0 +1,19 @@
+@import "../../sass/variables";
+
+.btnn {
+  width: 80%;
+  height: 100%;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem;
+  background-color: map-get($color-blue, full);
+  color: #ffffff;
+  font: inherit;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: map-get($color-blue, light);
+    cursor: pointer;
+  }
+}

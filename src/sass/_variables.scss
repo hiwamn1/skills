@@ -1,0 +1,31 @@
+$color-gray: (
+  full: #18191a,
+  light: #242526,
+  pale: #3a3b3c,
+  primary-button-text: #ffffff,
+);
+
+$color-blue: (
+  full: #2374e1,
+  light: #3982e4,
+  pale: #3a3b3c,
+  backdrop: #3c4d63,
+  primary: #77a7ff,
+);
+
+$color-text-icon: (
+  primary-icon: #e4e6eb,
+  primary-text: #e4e6eb,
+  primary-text-on-media: white,
+);
+
+$color-notification: (
+  notification-badge: #e41e3f,
+);
+
+$color-placeholder: (
+  placeholder-icon: #8a8d91,
+  placeholder-image: rgb(164, 167, 171),
+  placeholder-text: #8a8d91,
+  placeholder-text-on-media: rgba(255, 255, 255, 0.5),
+);
